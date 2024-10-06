@@ -6,12 +6,11 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  <title>Proportional Symbol Map and Heatmap</title>
 </head>
 <body>
-  <h1>Passenger Volume and Domestic Travellers</h1>
-  
-  <!-- Dropdowns for selecting year and state -->
+  <h1>Domestic and International Passenger Volumes throughout the Years</h1>
+
+  <!-- First Graph: Proportional Symbol Map with Year Selector Above -->
   <label for="year-selector">Select Year:</label>
   <select id="year-selector">
     <option value="2019">2019</option>
@@ -21,6 +20,10 @@
     <option value="2023" selected>2023</option>
   </select>
 
+  <!-- Div for the first graph (Proportional Symbol Map) -->
+  <div id="proportional-symbol-map"></div>
+
+  <!-- Second Graph: Heatmap with Airport (State) Selector Above -->
   <label for="airport-selector">Select Airport (State):</label>
   <select id="airport-selector">
     <option value="ADELAIDE">ADELAIDE</option>
@@ -30,8 +33,8 @@
     <option value="BRISBANE">BRISBANE</option>
   </select>
 
-  <!-- Div for embedding the visualization -->
-  <div id="week10homework"></div>
+  <!-- Div for the second graph (Heatmap) -->
+  <div id="heatmap"></div>
 
   <!-- Ensure the script runs after the HTML is fully loaded -->
   <script src="vega_lite_vis_2.js"></script>
