@@ -69,7 +69,7 @@
           "url": "https://raw.githubusercontent.com/aidanchuayh/week9homework/main/australia-airports-coor-cleaned.csv",
           "format": {"type": "csv"}
         },
-        "title": "Daily Domestic and International Travellers by Airport",
+        "title": "Monthly Domestic and International Travellers by Airport per Year",
         "transform": [
           {"filter": "datum.AIRPORT == 'MELBOURNE'"} 
         ],
